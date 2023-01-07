@@ -4,7 +4,7 @@ public class Animal {
         Double weight;
         Boolean alive;
 
-    public Animal(String species, String name, Double weight, Boolean alive) {
+    public Animal(String species) {
         this.species = species;
         this.name = name;
         this.weight = 3.0;

@@ -1,15 +1,18 @@
 public class Main {
 
 
-        public static void main(String[] args){
-        Car car = new Car("Vw", "Passat", 2010);
-        Phone phone = new Phone("Apple", "12 Mini", 2021);
+        public static void main(String[] args) {
+                Phone Iphone = new Phone("Iphone", "12 MINI", 2020);
+                Iphone.installAnApp("facebook");
+                Iphone.installAnApp("youtube", "4.23.1");
+                Iphone.installAnApp("twitter", "nightly-built", "Iphone-apps.com");
 
-        System.out.println(car);
-        System.out.println(phone);
+                List<String> apps = new ArrayList<>();
+                apps.add("instagram");
+                apps.add("tiktok");
+                apps.add("google maps");
 
-        car.turnOn();
-        phone.turnOn();
+                Iphone.installAnApp(apps);
 
-    }
+        }
 }
